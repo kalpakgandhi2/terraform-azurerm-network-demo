@@ -33,8 +33,7 @@ module "network" {
   }
 
   tags = {
-    owner       = var.owner
-    environment = "pov"
+    owner       = var.owner  
     costcenter  = "it"
   }
 
