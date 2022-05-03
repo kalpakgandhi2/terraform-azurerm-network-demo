@@ -35,6 +35,7 @@ module "network" {
   tags = {
     owner       = var.owner  
     costcenter  = "it"
+    source = "terraform"
   }
 
   depends_on = [azurerm_resource_group.demo]
