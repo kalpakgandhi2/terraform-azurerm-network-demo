@@ -17,7 +17,7 @@ resource "azurerm_resource_group" "demo" {
 }
 
 module "network" {
-  source  = "app.terraform.io/khemani-training/network/azurerm"
+  source  = "app.terraform.io/geico/network/azurerm"
   version = "3.5.0"
   # insert required variables here
   resource_group_name = azurerm_resource_group.demo.name
