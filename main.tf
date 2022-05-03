@@ -12,8 +12,8 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "demo" {
-  name     = "yash-demo"
-  location = "East US"
+  name     = var.resource_group
+  location = var.location
 }
 
 module "network" {
